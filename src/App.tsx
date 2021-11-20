@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { SignIn } from "./screens/SignIn";
 import { Register } from "./screens/Register";
 import { Home } from "./screens/Home";
+import { Customer } from "./screens/Customer";
 import GlobalStyle from "./styles/GlobalStyle";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/Home">
           <Home />
+        </Route>
+        <Route path="/Customer">
+          <Customer />
         </Route>
       </Switch>
       <GlobalStyle />
